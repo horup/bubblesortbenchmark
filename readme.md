@@ -1,11 +1,19 @@
+C:\Users\soh\Desktop\PROJECTS\jsvscsharp>clang -O -fsanitize=address main.cpp   && a.exe
+   Creating library a.lib and object a.exp
+30156ms to sort 50000 elements 10 times (Vector)
+22360ms to sort 50000 elements 10 times (Array)
 
+C:\Users\soh\Desktop\PROJECTS\jsvscsharp>clang -O main.cpp   && a.exe
+9984ms to sort 50000 elements 10 times (Vector)
+8859ms to sort 50000 elements 10 times (Array)
 
 C:\Users\soh\Desktop\PROJECTS\jsvscsharp>dotnet run --configuration=Release
-28500ms to sort 50000 elements 10 times  (List)
-13782ms to sort 50000 elements 10 times (Array)
+28766ms to sort 50000 elements 10 times  (List)
+14687ms to sort 50000 elements 10 times (Array)
 
 C:\Users\soh\Desktop\PROJECTS\jsvscsharp>node index.js
-27613ms to sort 50000 elements 10 times
+29131ms to sort 50000 elements 10 times
+
 
 Conclusion:
 Dotnet and node is similar in performance when using List.

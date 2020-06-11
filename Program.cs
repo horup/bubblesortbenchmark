@@ -37,7 +37,7 @@ namespace csharp
             int rerun = 10;
             int[] array = new int[num];
             for (var i = 0; i < num; i++)
-                array[i] = array.Length;
+                array[i] = array.Length - i;
 
             int tick = Environment.TickCount;
 
