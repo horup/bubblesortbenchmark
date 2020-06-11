@@ -6,7 +6,8 @@ C:\Users\soh\Desktop\PROJECTS\jsvscsharp>node index.js
 28326ms to sort 50000 elements 10 times
 
 Conclusion:
-Dotnet a factor 1.87 faster than node for bubblesort 
+Dotnet and node is similar in performance when using List.
+Dotnet a factor 1.87 faster than node for bubblesort when using array in dotnet
 
 Todo:
 - Check if it is possible to run node in "Release" configuration
