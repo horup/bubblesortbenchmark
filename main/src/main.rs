@@ -1,6 +1,6 @@
 use std::time::Instant;
  
-fn bubble_sort_optimized(arr: &mut [i16]) {
+fn bubble_sort_optimized(arr: &mut [i32]) {
      let mut new_len: usize;
     let mut len = arr.len();
     loop {
@@ -19,10 +19,10 @@ fn bubble_sort_optimized(arr: &mut [i16]) {
 }
 
 fn main() {
-	let mut array = [0_i16; 50 * 1000];
+	let mut array = [0_i32; 50 * 1000];
 	let len = array.len();
 	for i in 1..len {
-		array[i] = i as i16;
+		array[i] = i as i32;
 	}
 	
 	let rerun = 10;
