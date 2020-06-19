@@ -22,7 +22,7 @@ fn main() {
 	let mut array = [0_i32; 50 * 1000];
 	let len = array.len();
 	for i in 1..len {
-		array[i] = i as i32;
+		array[i] = len as i32 - i as i32;
 	}
 	
 	let rerun = 10;
