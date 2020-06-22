@@ -4,6 +4,3 @@ dotnet run --configuration=Release
 node index.js
 rustc -O main.rs -o rust.exe
 ./rust.exe
-
-cd main
-cargo run
