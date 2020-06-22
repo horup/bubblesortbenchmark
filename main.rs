@@ -14,7 +14,7 @@ fn bubble_sort_optimized(arr: &mut [i32]) {
 fn main() {
 	let mut array = [0_i32; 50 * 1000];
 	let len = array.len();
-	for i in 1..len {
+	for i in 0..len {
 		array[i] = len as i32 - i as i32;
 	}
 	
