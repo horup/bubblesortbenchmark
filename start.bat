@@ -3,4 +3,4 @@ clang -O main.cpp && a.exe
 dotnet run --configuration=Release
 node index.js
 rustc -O main.rs -o rust.exe
-./rust.exe
+rust.exe

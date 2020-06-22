@@ -2,8 +2,8 @@ use std::time::Instant;
  
 fn bubble_sort_optimized(arr: &mut [i32]) {
     let len = arr.len();
-    for j in 1..len {
-        for i in 1..len {
+    for j in 0..len {
+        for i in 0..len {
             if arr[i] < arr[j] {
                 arr.swap(i, j);
             }
@@ -20,7 +20,7 @@ fn main() {
 	
 	let rerun = 10;
 	let start = Instant::now();
-	for _q in 1..rerun {
+	for _q in 0..rerun {
 		bubble_sort_optimized(&mut array);
 	}
 	let duration = start.elapsed();
