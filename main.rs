@@ -1,20 +1,13 @@
 use std::time::Instant;
  
 fn bubble_sort_optimized(arr: &mut [i32]) {
-     let mut new_len: usize;
-    let mut len = arr.len();
-    loop {
-        new_len = 0;
+    let len = arr.len();
+    for j in 1..len {
         for i in 1..len {
-            if arr[i - 1] > arr[i] {
-                arr.swap(i - 1, i);
-                new_len = i;
+            if arr[i] < arr[j] {
+                arr.swap(i, j);
             }
         }
-        if new_len == 0 {
-            break;
-        }
-        len = new_len;
     }
 }
 
